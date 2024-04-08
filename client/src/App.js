@@ -3,7 +3,8 @@ import AppRouter from './Router';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-// Создание темы
+
+
 const darkBrownTheme = createTheme({
   palette: {
     mode: 'dark',
