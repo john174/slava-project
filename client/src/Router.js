@@ -6,6 +6,7 @@ import HomePage from './components/pages/home/HomePage';
 import GalleryPage from './components/pages/gallery/GalleryPage';
 import BlogPage from './components/pages/blog/BlogPage';
 import AboutMePage from './components/pages/about/AboutMePage';
+import AddButterflyPage from './components/pages/gallery/AddButterflyForm';
 
 export default function ButterflyRouter() {
   return (
@@ -32,8 +33,9 @@ export default function ButterflyRouter() {
         </Container>
       </AppBar>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallery/addButterfly" element={<AddButterflyPage />} /> {/* Добавление маршрута для страницы добавления бабочки */}
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/about-me" element={<AboutMePage />} />
       </Routes>
